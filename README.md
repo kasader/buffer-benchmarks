@@ -8,10 +8,10 @@ Sample data came from [Farcaster](https://github.com/farcasterxyz/hub).
 
 ### Serialization Formats
 
-    * [Protocol Buffers](https://protobuf.dev)
-    * [FlatBuffers](https://google.github.io/flatbuffers/)
-    * [Cap'n Proto](https://capnproto.org/)
-    * [Diarkis Puffer](https://diarkis.io/)
+* [Protocol Buffers](https://protobuf.dev)
+* [FlatBuffers](https://google.github.io/flatbuffers/)
+* [Cap'n Proto](https://capnproto.org/)
+* [Diarkis Puffer](https://diarkis.io/)
 
 ### Programming Languages
 
@@ -25,14 +25,14 @@ Sample data came from [Farcaster](https://github.com/farcasterxyz/hub).
 
 ### Go (13 Nov 2025)
 
-    * Benchmarks are CPU bound (no disk operations)
-    * OS: macOS 26.1
-    * CPU: Apple M3
-    * Puffer: [diarkis/puffer](https://github.com/Diarkis/puffer) v0.1.0
-    * Protobuf: [golang/protobuf](https://github.com/golang/protobuf) v1.36.10
-    * Protobuf (gogofaster): [gogoprotobuf](https://github.com/gogo/protobuf) v1.3.2
-    * FlatBuffers: [google/flatbuffers](https://github.com/google/flatbuffers/tree/master/go) v1.12.1
-    * ~~Capnp: [capnproto/go-capnproto2](https://github.com/capnproto/go-capnproto2) v3.1.0-alpha.2~~
+* Benchmarks are CPU bound (no disk operations)
+* OS: macOS 26.1
+* CPU: Apple M3
+* Puffer: [diarkis/puffer](https://github.com/Diarkis/puffer) v0.1.0
+* Protobuf: [golang/protobuf](https://github.com/golang/protobuf) v1.36.10
+* Protobuf (gogofaster): [gogoprotobuf](https://github.com/gogo/protobuf) v1.3.2
+* FlatBuffers: [google/flatbuffers](https://github.com/google/flatbuffers/tree/master/go) v1.12.1
+* ~~Capnp: [capnproto/go-capnproto2](https://github.com/capnproto/go-capnproto2) v3.1.0-alpha.2~~
 
 | Test                              | Puffer      | Protobuf     | Protobuf (gogofaster) | FlatBuffers    |
 | --------------------------------- | ----------- | -------------| --------------------- | -------------- |
@@ -44,7 +44,7 @@ Sample data came from [Farcaster](https://github.com/farcasterxyz/hub).
 
 **Notes**:
 
-    * FlatBuffers does not require much ram. Protobuf (gogofaster) does not require much CPU.
-    * FlatBuffers was created "for game development and other performance-critical applications" at Google as an alternative to Protobuf.
-    * See: https://eltonminetto.dev/en/post/2024-08-05-json-vs-flatbuffers-vs-protobuf/
-    * Puffer lacks MANY features compared to the other benchmarked languages.
+* FlatBuffers does not require much ram. Protobuf (gogofaster) does not require much CPU.
+* FlatBuffers was created "for game development and other performance-critical applications" at Google as an alternative to Protobuf.
+* See [this](https://eltonminetto.dev/en/post/2024-08-05-json-vs-flatbuffers-vs-protobuf/) article for more comparison between Protobuf and FlatBuffers.
+* Puffer lacks MANY features compared to the other benchmarked languages.
