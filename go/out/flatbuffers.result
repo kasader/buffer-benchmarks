@@ -1,6 +1,6 @@
 goos: darwin
 goarch: arm64
-pkg: github.com/kcchu/buffer-benchmarks/flatbuffers
+pkg: github.com/kasader/buffer-benchmarks/flatbuffers
 cpu: Apple M3
 BenchmarkFlatBuffers/Encode-8         	 2479149	       456.0 ns/op	    2256 B/op	       8 allocs/op
 BenchmarkFlatBuffers/Encode-8         	 2664991	       451.6 ns/op	    2256 B/op	       8 allocs/op
@@ -25,4 +25,4 @@ BenchmarkFlatBuffers/Decode-8         	132678534	         8.856 ns/op	       0 B
 Wire format size = 432
 Wire format size (gzip) = 407
 PASS
-ok  	github.com/kcchu/buffer-benchmarks/flatbuffers	38.184s
+ok  	github.com/kasader/buffer-benchmarks/flatbuffers	38.184s

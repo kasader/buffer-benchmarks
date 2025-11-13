@@ -1,4 +1,4 @@
-module github.com/kcchu/buffer-benchmarks
+module github.com/kasader/buffer-benchmarks
 
 go 1.23
 

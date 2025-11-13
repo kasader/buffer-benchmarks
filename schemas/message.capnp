@@ -2,7 +2,7 @@ using Go = import "/go.capnp";
 @0xe6989e0b6c84e686;
 
 $Go.package("generated");
-$Go.import("github.com/kcchu/buffer-benchmarks/capnproto/generated");
+$Go.import("github.com/kasader/buffer-benchmarks/capnproto/generated");
 
 enum MessageType {
   defaultMessageType @0;

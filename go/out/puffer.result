@@ -1,6 +1,6 @@
 goos: darwin
 goarch: arm64
-pkg: github.com/kcchu/buffer-benchmarks/puffer
+pkg: github.com/kasader/buffer-benchmarks/puffer
 cpu: Apple M3
 BenchmarkPuffer/Encode-8         	 5412639	       221.1 ns/op	    1368 B/op	       7 allocs/op
 BenchmarkPuffer/Encode-8         	 5588326	       215.7 ns/op	    1368 B/op	       7 allocs/op
@@ -25,4 +25,4 @@ BenchmarkPuffer/Decode-8         	 4997116	       234.9 ns/op	     664 B/op	    
 Wire format size = 297
 Wire format size (gzip) = 322
 PASS
-ok  	github.com/kcchu/buffer-benchmarks/puffer	28.737s
+ok  	github.com/kasader/buffer-benchmarks/puffer	28.737s

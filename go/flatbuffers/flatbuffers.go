@@ -6,8 +6,8 @@ import (
 	"log"
 
 	flatbuffers "github.com/google/flatbuffers/go"
-	"github.com/kcchu/buffer-benchmarks/constants"
-	"github.com/kcchu/buffer-benchmarks/flatbuffers/generated"
+	"github.com/kasader/buffer-benchmarks/constants"
+	"github.com/kasader/buffer-benchmarks/flatbuffers/generated"
 )
 
 func Encode() []byte {

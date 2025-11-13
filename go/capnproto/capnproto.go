@@ -6,8 +6,8 @@ import (
 	"log"
 
 	"capnproto.org/go/capnp/v3"
-	"github.com/kcchu/buffer-benchmarks/capnproto/generated"
-	"github.com/kcchu/buffer-benchmarks/constants"
+	"github.com/kasader/buffer-benchmarks/capnproto/generated"
+	"github.com/kasader/buffer-benchmarks/constants"
 )
 
 func Encode(packed bool) []byte {

@@ -5,8 +5,8 @@ package protobuf
 import (
 	"log"
 
-	"github.com/kcchu/buffer-benchmarks/constants"
-	"github.com/kcchu/buffer-benchmarks/puffer/generated"
+	"github.com/kasader/buffer-benchmarks/constants"
+	"github.com/kasader/buffer-benchmarks/puffer/generated"
 )
 
 func Encode() []byte {

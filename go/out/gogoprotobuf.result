@@ -1,6 +1,6 @@
 goos: darwin
 goarch: arm64
-pkg: github.com/kcchu/buffer-benchmarks/gogoprotobuf
+pkg: github.com/kasader/buffer-benchmarks/gogoprotobuf
 cpu: Apple M3
 BenchmarkGogofaster/Encode-8         	 7019113	       167.2 ns/op	     640 B/op	       6 allocs/op
 BenchmarkGogofaster/Encode-8         	 7221520	       167.5 ns/op	     640 B/op	       6 allocs/op
@@ -25,4 +25,4 @@ BenchmarkGogofaster/Decode-8         	 5124925	       231.9 ns/op	     600 B/op	
 Wire format size = 299
 Wire format size (gzip) = 325
 PASS
-ok  	github.com/kcchu/buffer-benchmarks/gogoprotobuf	28.419s
+ok  	github.com/kasader/buffer-benchmarks/gogoprotobuf	28.419s

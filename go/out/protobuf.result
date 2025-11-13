@@ -1,6 +1,6 @@
 goos: darwin
 goarch: arm64
-pkg: github.com/kcchu/buffer-benchmarks/protobuf
+pkg: github.com/kasader/buffer-benchmarks/protobuf
 cpu: Apple M3
 BenchmarkPuffer/Encode-8         	 2763518	       424.8 ns/op	     992 B/op	       8 allocs/op
 BenchmarkPuffer/Encode-8         	 2876169	       418.4 ns/op	     992 B/op	       8 allocs/op
@@ -25,4 +25,4 @@ BenchmarkPuffer/Decode-8         	 2326060	       544.8 ns/op	     952 B/op	    
 Wire format size = 299
 Wire format size (gzip) = 324
 PASS
-ok  	github.com/kcchu/buffer-benchmarks/protobuf	34.881s
+ok  	github.com/kasader/buffer-benchmarks/protobuf	34.881s
