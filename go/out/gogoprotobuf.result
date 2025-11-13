@@ -1,0 +1,28 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/kcchu/buffer-benchmarks/gogoprotobuf
+cpu: Apple M3
+BenchmarkGogofaster/Encode-8         	 7019113	       167.2 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 7221520	       167.5 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 7078088	       166.8 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 7134189	       166.7 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 7220241	       165.9 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 7228533	       165.9 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 7232005	       166.4 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 7162728	       168.1 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 6723558	       176.8 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Encode-8         	 6779007	       177.0 ns/op	     640 B/op	       6 allocs/op
+BenchmarkGogofaster/Decode-8         	 5203611	       232.4 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5150275	       232.9 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5150038	       232.7 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5184386	       231.6 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5224828	       231.2 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5185909	       230.7 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5204602	       230.9 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5195974	       232.5 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5140000	       232.4 ns/op	     600 B/op	      12 allocs/op
+BenchmarkGogofaster/Decode-8         	 5124925	       231.9 ns/op	     600 B/op	      12 allocs/op
+Wire format size = 299
+Wire format size (gzip) = 325
+PASS
+ok  	github.com/kcchu/buffer-benchmarks/gogoprotobuf	28.419s

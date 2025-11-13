@@ -1,0 +1,45 @@
+{
+  "CastId": {
+    "package": "generated",
+    "properties": {
+      "fid": "b[]",
+      "ts_hash": "b[]"
+    }
+  },
+  "UserId": {
+    "package": "generated",
+    "properties": {
+      "fid": "b[]"
+    }
+  },
+  "CastAddBody": {
+    "package": "generated",
+    "properties": {
+      "embeds": "string[]",
+      "mentions": "UserId",
+      "parent": "CastId",
+      "text": "string"
+    }
+  },
+  "MessageData": {
+    "package": "generated",
+    "properties": {
+      "body": "CastAddBody",
+      "type": "u8",
+      "timestamp": "u32",
+      "fid": "b[]",
+      "network": "u8"
+    }
+  },
+  "Message": {
+    "package": "generated",
+    "properties": {
+      "data": "b[]",
+      "hash": "b[]",
+      "hash_scheme": "u8",
+      "signature": "b[]",
+      "signature_scheme": "u8",
+      "signer": "b[]"
+    }
+  }
+}

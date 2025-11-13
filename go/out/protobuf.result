@@ -1,0 +1,28 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/kcchu/buffer-benchmarks/protobuf
+cpu: Apple M3
+BenchmarkPuffer/Encode-8         	 2763518	       424.8 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2876169	       418.4 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2867383	       419.4 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2824766	       427.0 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2362106	       441.0 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2636131	       427.1 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2837598	       423.2 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2849742	       423.0 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2831526	       433.0 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Encode-8         	 2431018	       448.2 ns/op	     992 B/op	       8 allocs/op
+BenchmarkPuffer/Decode-8         	 1901941	       539.7 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2376146	       515.0 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2345875	       520.0 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2359041	       537.0 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2276493	       526.0 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2137665	       569.6 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2188340	       572.6 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2309145	       522.6 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2332275	       514.9 ns/op	     952 B/op	      14 allocs/op
+BenchmarkPuffer/Decode-8         	 2326060	       544.8 ns/op	     952 B/op	      14 allocs/op
+Wire format size = 299
+Wire format size (gzip) = 324
+PASS
+ok  	github.com/kcchu/buffer-benchmarks/protobuf	34.881s

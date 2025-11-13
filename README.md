@@ -1,6 +1,6 @@
 # Serialization Formats Benchmarks
 
-This repository contains benchmarking code for different serialization formats across programing languages.
+This repository contains benchmarking code for different serialization formats across programming languages.
 
 Sample data came from [Farcaster](https://github.com/farcasterxyz/hub).
 
@@ -8,48 +8,43 @@ Sample data came from [Farcaster](https://github.com/farcasterxyz/hub).
 
 ### Serialization Formats
 
-  * [Protocol Buffers](https://protobuf.dev)
-  * [FlatBuffers](https://google.github.io/flatbuffers/)
-  * [Cap'n Proto](https://capnproto.org/)
+    * [Protocol Buffers](https://protobuf.dev)
+    * [FlatBuffers](https://google.github.io/flatbuffers/)
+    * [Cap'n Proto](https://capnproto.org/)
+    * [Diarkis Puffer](https://diarkis.io/)
 
 ### Programming Languages
 
-  * Go
-  * Rust
+    * Go
+    * ...
 
 ## Results
 
 > **Note**
 > Smaller is better
 
-### Go (17 Jan 2023)
+### Go (13 Nov 2025)
 
-  * Benchmarks are CPU bound (no disk operations)
-  * OS: macOS 13.0.1
-  * CPU: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-  * Protobuf: [golang/protobuf](https://github.com/golang/protobuf)
-  * Protobuf (gogofaster): [gogoprotobuf](https://github.com/gogo/protobuf)
-  * FlatBuffers: [google/flatbuffers](https://github.com/google/flatbuffers/tree/master/go) v0.0.0-20230110200425-62e4d2e5b215
-  * Capnp: [capnproto/go-capnproto2](https://github.com/capnproto/go-capnproto2) v3.0.0-alpha.23
+    * Benchmarks are CPU bound (no disk operations)
+    * OS: macOS 26.1
+    * CPU: Apple M3
+    * Puffer: [diarkis/puffer](https://github.com/Diarkis/puffer) v0.1.0
+    * Protobuf: [golang/protobuf](https://github.com/golang/protobuf) v1.36.10
+    * Protobuf (gogofaster): [gogoprotobuf](https://github.com/gogo/protobuf) v1.3.2
+    * FlatBuffers: [google/flatbuffers](https://github.com/google/flatbuffers/tree/master/go) v1.12.1
+    * ~~Capnp: [capnproto/go-capnproto2](https://github.com/capnproto/go-capnproto2) v3.1.0-alpha.2~~
 
-| Test                              | Protobuf | Protobuf (gogofaster) | FlatBuffers | Capnp | Capnp (packed) |
-| --------------------------------- | -------- | --------------------| ----------- | ----- | -------------- |
-| Encode (ns/op)                    | 883.8    | 384.4               | 856.8       | 1709  | 2591           |
-| Decode (ns/op)                    | 1179     | 496.2               | 18.89       | 830.8 | 1716           |
-| Wire format size (bytes)          | 299      | 299                 | 432         | 440   | 344            |
-| Wire format size, gzipped (bytes) | 323      | 323                 | 406         | 392   | 368            |
+| Test                              | Puffer      | Protobuf     | Protobuf (gogofaster) | FlatBuffers    |
+| --------------------------------- | ----------- | -------------| --------------------- | -------------- |
+| Encode (ns/op)                    | 215.6n ± 4% | 425.9n ± 4%  | **167.0n ± 6%**       | 454.7n ± 1%    |
+| Encode (allocs/op)                | 7.000 ± 0%  | 8.000 ± 0%   | **6.000 ± 0%**        | 8.000 ± 0%     |
+| Decode (allocs/op)                | 16.00 ± 0%  | 14.00 ± 0%   | 12.00 ± 0%            | **0.000 ± 0%** |
+| Wire format size (bytes)          | **297**     | 299          | 299                   | 432            |
+| Wire format size, gzipped (bytes) | **322**     | 325          | 324                   | 412            |
 
-### Rust (20 Jan 2023)
+**Notes**:
 
-  * Benchmarks are CPU bound (no disk operations)
-  * OS: macOS 13.0.1
-  * CPU: Intel(R) Core(TM) i7-8559U CPU @ 2.70GHz
-  * Protobuf (rust-protobuf): [stepancheg/rust-protobuf](https://github.com/stepancheg/rust-protobuf) 3.2.0
-  * Protobuf (prost): [tokio-rs/prost](https://github.com/tokio-rs/prost) 0.11.6
-  * FlatBuffers: [google/flatbuffers](https://github.com/google/flatbuffers/tree/master/rust) 22.10.26
-
-| Test                              | Protobuf (rust-protobuf)| Protobuf (prost) | FlatBuffers |
-| --------------------------------- | ----------------------- | -----------------| ----------- |
-| Encode (ns/op)                    | 704.88                  | 642.90           | 878.02      |
-| Decode (ns/op)                    | 751.61                  | 1058.7           | 331.12      |
-| Wire format size (bytes)          | 299                     | 299              | 428         |
+    * FlatBuffers does not require much ram. Protobuf (gogofaster) does not require much CPU.
+    * FlatBuffers was created "for game development and other performance-critical applications" at Google as an alternative to Protobuf.
+    * See: https://eltonminetto.dev/en/post/2024-08-05-json-vs-flatbuffers-vs-protobuf/
+    * Puffer lacks MANY features compared to the other benchmarked languages.

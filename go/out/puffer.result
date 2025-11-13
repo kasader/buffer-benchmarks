@@ -1,0 +1,28 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/kcchu/buffer-benchmarks/puffer
+cpu: Apple M3
+BenchmarkPuffer/Encode-8         	 5412639	       221.1 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5588326	       215.7 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5580292	       216.5 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5576054	       215.6 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5548852	       216.6 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5571542	       216.4 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5560177	       215.3 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5625456	       215.5 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5658897	       208.0 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Encode-8         	 5776706	       207.8 ns/op	    1368 B/op	       7 allocs/op
+BenchmarkPuffer/Decode-8         	 5158010	       233.0 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 5120986	       235.5 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 5123656	       233.7 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 5156485	       234.0 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 5104071	       234.3 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 5140012	       234.3 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 5138239	       234.7 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 5126931	       234.8 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 5137446	       234.8 ns/op	     664 B/op	      16 allocs/op
+BenchmarkPuffer/Decode-8         	 4997116	       234.9 ns/op	     664 B/op	      16 allocs/op
+Wire format size = 297
+Wire format size (gzip) = 322
+PASS
+ok  	github.com/kcchu/buffer-benchmarks/puffer	28.737s

@@ -1,0 +1,28 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/kcchu/buffer-benchmarks/flatbuffers
+cpu: Apple M3
+BenchmarkFlatBuffers/Encode-8         	 2479149	       456.0 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2664991	       451.6 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2668278	       448.8 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2661472	       459.6 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2647659	       453.1 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2660422	       454.0 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2644725	       454.2 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2638999	       456.9 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2636815	       455.4 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Encode-8         	 2639107	       455.2 ns/op	    2256 B/op	       8 allocs/op
+BenchmarkFlatBuffers/Decode-8         	133120974	         8.925 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	135705368	         9.051 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	130983120	         9.283 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	135663753	         9.059 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	134860168	         9.095 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	132183914	         9.082 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	133474017	         9.160 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	131518018	         9.041 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	132133160	         9.189 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFlatBuffers/Decode-8         	132678534	         8.856 ns/op	       0 B/op	       0 allocs/op
+Wire format size = 432
+Wire format size (gzip) = 407
+PASS
+ok  	github.com/kcchu/buffer-benchmarks/flatbuffers	38.184s
