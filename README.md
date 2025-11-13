@@ -15,8 +15,7 @@ Sample data came from [Farcaster](https://github.com/farcasterxyz/hub).
 
 ### Programming Languages
 
-    * Go
-    * ...
+* Go
 
 ## Results
 
